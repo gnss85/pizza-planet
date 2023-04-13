@@ -18,6 +18,7 @@
           <RouterLink :to="{ name: 'locationsLink' }" class="link">Locations</RouterLink>
         </ul>
       </nav>
+      <RouterView />
     </section>
   </div>
 </template>

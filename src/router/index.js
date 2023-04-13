@@ -4,7 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import AdminView from '../views/AdminView.vue'
 import MenuView from '../views/MenuView.vue'
 import Delivery from '../components/Delivery.vue'
-import Histoy from '../components/History.vue'
+import History from '../components/History.vue'
 import Locations from '../components/Locations.vue'
 
 const router = createRouter({
@@ -13,7 +13,11 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      components: {
+        default: HomeView,
+        delivery: Delivery,
+        history: History
+      }
     },
     {
       path: '/admin',
