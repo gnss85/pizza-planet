@@ -12,3 +12,32 @@
     <h2>The #1 Place For Pizza</h2>
   </header>
 </template>
+
+<style lang="scss" scoped>
+.site--title {
+  font-size: 3.6rem;
+  color: aliceblue;
+  rotate: -8deg;
+  margin-block-end: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1rem;
+  height: 650px;
+  color: aliceblue;
+  background-image: url(../assets/images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 3px rgb(20 20 20);
+}
+
+h2 {
+  margin-block: 2rem;
+  color: antiquewhite;
+  font-size: 2rem;
+}
+</style>
