@@ -1,15 +1,21 @@
 <script setup>
+import { ref } from 'vue'
 import usePizzas from '../../composables/usePizzas'
 const { allPizzas, deletePizza, message } = usePizzas()
+
+const showMenu = ref(true)
 </script>
 
 <template>
   <section class="admin-section">
     <header class="admin-section--header">
       <h3>Menu</h3>
+      <small class="toggle-button" @click="showMenu = !showMenu">{{
+        showMenu ? 'hide' : 'show'
+      }}</small>
     </header>
     <p class="error" v-if="message">{{ message }}</p>
-    <table>
+    <table v-show="showMenu">
       <thead>
         <tr>
           <th>Pizza</th>

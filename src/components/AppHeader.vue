@@ -1,5 +1,10 @@
+<script setup>
+import SignIn from './SignIn.vue'
+</script>
+
 <template>
   <header>
+    <SignIn />
     <h1 class="site--title">
       <RouterLink :to="{ name: 'home' }">~ Pizza Planet ~</RouterLink>
     </h1>
@@ -25,7 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 1rem;
+  padding-block: 2rem;
   height: 650px;
   color: aliceblue;
   background-image: url(../assets/images/main-bg.jpg);

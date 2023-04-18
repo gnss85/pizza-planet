@@ -22,3 +22,20 @@
     </section>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 50em) {
+    flex-direction: row;
+  }
+}
+</style>

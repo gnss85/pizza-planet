@@ -22,6 +22,7 @@ export default function usePizzas() {
     }
   }
   onMounted(getPizzas)
+
   async function deletePizza(id) {
     try {
       message.value = ''
