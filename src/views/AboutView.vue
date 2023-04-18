@@ -38,4 +38,30 @@
     flex-direction: row;
   }
 }
+
+.info {
+  &--text-wrapper {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    align-self: center;
+  }
+
+  &--text {
+  }
+
+  &--image {
+    flex: 1;
+    padding: 1rem;
+  }
+}
+
+.more-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #faf1e2;
+  width: 100%;
+  padding: 1rem;
+}
 </style>

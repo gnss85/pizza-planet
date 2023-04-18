@@ -15,7 +15,7 @@ const formData = ref({
     <div class="modal--content">
       <span class="modal--close" @click="toggleModal()">&#10060;</span>
       <p class="modal--text">Please login to continue</p>
-      <span class="error-message">{{ errorMessage }}</span>
+      <span class="error-message" v-if="errorMessage">{{ errorMessage }}</span>
       <form class="form-wrapper">
         <div class="form-group">
           <label for="email">Email address</label>
