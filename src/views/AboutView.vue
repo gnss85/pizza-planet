@@ -47,9 +47,6 @@
     align-self: center;
   }
 
-  &--text {
-  }
-
   &--image {
     flex: 1;
     padding: 1rem;
